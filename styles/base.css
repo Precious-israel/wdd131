@@ -182,10 +182,10 @@ h3 {
 
 .small-box .box {
     width: 100%; /* This makes the box take up the full width of its parent */
-    /* padding-bottom: 1px; */
+     padding-bottom: 1px; 
     background-color: hsl(235, 19%, 87%);
     font-size: 1.12rem; /* Increase the font size if needed */
-    height: 785%;
+    height: 802%;
     border-radius: 5px;
 }
 /* Container for the card2 section */
