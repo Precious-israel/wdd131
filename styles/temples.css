@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color:blueviolet;
     color: white;
     padding: 10px;
     display: flex;
@@ -122,7 +122,7 @@ margin-top: 40px;
 }
 
 footer {
-    background-color: #333;
+    background-color: blueviolet;
     color: white;
     text-align: center;
     padding: 15px;
@@ -131,5 +131,9 @@ footer {
     position: relative;
     height: 60px;
     margin-bottom: 5px;
+    
 }
 
+footer .modified {
+    color: red;
+}

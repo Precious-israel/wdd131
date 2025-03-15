@@ -21,7 +21,7 @@
 
 
 nav {
-    display: flex;
+    
     list-style-type: none;
     display: flex;
     gap: 15px;
@@ -33,17 +33,15 @@ nav {
 }
 
 nav a {
-    color: red;
+    color:white;
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
 
 }
     nav a:hover {
-    background-color: #f3f8f8;
+    background-color: blue;
     }
-
-
 
 
 body {
@@ -53,9 +51,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     flex-direction: column;
-
 }
-
 
 .card {
     width: 80%;
@@ -82,13 +78,14 @@ main {
 /* Optional: Style for the image */
 .main-card img {
     margin-top: 20px;
-    padding-left: 200px;
     width: 200px; /* Keeps the image size fixed */
-    height: 200px; /* Maintains aspect ratio */
+    object-fit: cover;
 }
 
 .main-card p {
     line-height: 2.0; /* Adjust the line height for better readability */
+    text-align: justify;
+    
 }
 
 .bigger-container .box {
@@ -154,6 +151,7 @@ h3 {
     margin-top: 20px;
     width: 150px; /* Adjust image size as needed */
     height: auto; /* Maintains aspect ratio of the image */
+    object-fit: cover;
 }
 
 .Nigeria h3 {
@@ -219,12 +217,8 @@ h3 {
 
 .card2 a:hover {
     text-decoration: underline; /* Underline effect on hover */
+    line-height: 2px;
 }
-
-
-
-
-
 
 footer {
     display: grid;
