@@ -10,9 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     } else {
         console.error("Menu toggle button or menu not found in DOM.");
-    }
-
-    // Dynamic Footer Updates
+    }    // Dynamic Footer Updates
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
 });
