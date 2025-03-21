@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria Information</title>
+    <meta name="description"
+        content="Information about Nigeria, the most populous and economically powerful country in Africa.">
+    <meta name="author" content="OJO Israel">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria </h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.jpg" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.jpg" media="(min-width: 500px)">
+                <img src="images/hero-small.jpg" alt="Nigeria Landscape" width="400" height="200">
+            </picture>
+            
+        </div>
+
+        <section class="data-info">
+            <div class="data-header">
+                <h2>Data</h2>
+            </div>
+            <div class="data-content">
+             <ul>
+                    <li>Area: 923,768 km²</li>
+                    <li>Population: 200 Millions</li>
+                    <li>Capital: Abuja</li>
+                    <li>Language: English</li>
+                    <li>Currency: Naira</li>
+                    <li>Time Zone: UTC + 1</;>
+                    <li>Calling Code: +234</li>
+                    <li>Internet TLD: .ng</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="weather-box">
+            <div class="weather-header">
+                <h2>Weather</h2>
+                <div class="weather-icon">
+                    <img src="week03/images/weather-icon.svg" alt="weather-icon">
+                </div>
+            </div>
+
+            <div class="weather-content">
+                <p>Temperature: <span id="temp">8</span>°C</p>
+                <p>Wind Speed: <span id="windSpeed">6</span> km/h</p>
+                <p>Conditions: <span id="conditiocs">Partly Cloudy</span></p>
+                <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> | OJO Israel | Lagos, Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+
+</html>

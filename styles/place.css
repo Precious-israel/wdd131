@@ -1,0 +1,167 @@
+:root {
+    --main-color: #007bff;
+    --secondary-color: green;
+    --font-family: Arial, sans-serif;
+}
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body spans the full viewport height */
+    box-sizing: border-box; /* Corrected property to ensure proper sizing */
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Main Container */
+main {
+    flex: 1; /* Ensures main grows to occupy space between header and footer */
+    position: relative; /* Makes it the container for absolutely positioned elements */
+}
+
+/* Hero Image */
+.hero {
+    width: 100%;
+    height: 50vh; /* Make the hero image take half the screen height */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the full area without distortion */
+}
+
+/* Data Section Styling */
+.data-info {
+    position: absolute; /* Relative to main container */
+    top: 1rem;
+    left: 1rem;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the "Data" Header */
+.data-header {
+    background-color: rgba(144, 238, 144, 0.6); /* Light green */
+    border-bottom: 1px solid #c3e6cb;
+    padding: 0.5rem;
+    border-radius: 8px 8px 0 0;
+    text-align: left;
+    font-weight: bold;
+    margin-left: -1.5rem;
+    margin-right: 12%;
+}
+
+.data-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-content ul {
+    list-style: none; /* Removes the bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.data-content ul li {
+    margin-bottom: 0.5rem; /* Adds vertical spacing between list items */
+    text-wrap: wrap;
+}
+
+/* Weather Box Styling */
+.weather-box {
+    position: absolute; /* Relative to main container */
+    bottom: 2rem;
+    right: 2rem;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Weather Header Styling */
+.weather-header {
+    display: flex; /* Enables Flexbox for horizontal alignment */
+    align-items: center; /* Vertically centers items */
+    gap: 0.5rem; /* Adds space between the heading and the icon */
+    background-color: rgba(144, 238, 144, 0.6); /* Transparent green background */
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-left: -1.5rem;
+    margin-right: 12%;
+}
+
+/* Weather Icon Styling */
+.weather-icon img {
+    width: 30px; /* Adjust size of the icon */
+    height: 30px; /* Maintain aspect ratio */
+}
+
+/* Weather Content within the Box */
+.weather-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem; /* Spacing between each child */
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Adjustments for Wider Views */
+@media (min-width: 700px) {
+    body {
+        min-height: 120vh; /* Extend height for wider views */
+    }
+
+    .hero {
+        height: 60vh; /* Adjust hero image height for wider screens */
+    }
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 700px) {
+    .data-info,
+    .weather-box {
+        position: static; /* Removes absolute positioning */
+        width: 100%; /* Full width to fit the mobile screen */
+        margin: 1rem 0; /* Adds vertical gaps between sections */
+    }
+
+    main {
+        display: flex;
+        flex-direction: column; /* Stacks sections vertically */
+        gap: 1rem; /* Adds consistent vertical spacing between sections */
+        padding: 1rem; /* Adds padding around the content */
+    }
+
+    .hero {
+        height: 40vh; /* Adjust hero image height for smaller screens */
+    }
+}
