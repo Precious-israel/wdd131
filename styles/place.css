@@ -72,6 +72,23 @@ section {
     transform: translateX(-12%); /* Move header 5% to the left */
 }
 
+/* Example of using ::after properly */
+h1::after {
+
+    display: inline-block; /* Ensures the content behaves like an inline element */
+    margin-left: 10px; /* Spacing between the main content and the pseudo-element */
+    color: var(--secondary-color); /* Matches the custom secondary color */
+    font-size: 1.2rem; /* Adjusts size of the pseudo-element */
+}
+
+/* Adding ::after to Data Header */
+.data-header::after {
+
+    font-size: 1rem; /* Icon size adjustment */
+    margin-left: 8px; /* Small spacing for better appearance */
+    color: #ffffff; /* Icon matches the white color of the header */
+}
+
 .data-info {
     top: 10px; /* Space from top */
     left: 20px; /* Space from left */
