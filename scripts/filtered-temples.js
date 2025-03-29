@@ -1,19 +1,3 @@
-// Event listener for DOMContentLoaded
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
-
-  if (menuToggle && menu) {
-      menuToggle.addEventListener("click", function () {
-          menu.classList.toggle("open");
-          // Toggle between hamburger (☰) and close (✖) icon
-          menuToggle.textContent = menu.classList.contains("open") ? "✖" : "☰";
-      });
-  } else {
-      console.error("Menu toggle button or menu not found in DOM.");
-  }
-});
-
 // Temple data array with corrected property names
 const temples = [
   {
@@ -125,6 +109,21 @@ const temples = [
   // Add more temple objects here...
 ];
 
+// Event listener for DOMContentLoaded
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  if (menuToggle && menu) {
+      menuToggle.addEventListener("click", function () {
+          menu.classList.toggle("open");
+          // Toggle between hamburger (☰) and close (✖) icon
+          menuToggle.textContent = menu.classList.contains("open") ? "✖" : "☰";
+      });
+  } else {
+      console.error("Menu toggle button or menu not found in DOM.");
+  }
+});
 
 // Dynamically generate temple cards with corrected formatting
 const container = document.querySelector("#temple-container");
@@ -149,7 +148,9 @@ function generateTempleCards(templesToDisplay) {
 
       container.appendChild(card);
   });
+  
 }
+
 
 // Initial render for the "Home" menu option (default to displaying all temples)
 generateTempleCards(temples);

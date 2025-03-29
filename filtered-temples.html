@@ -19,35 +19,31 @@
 <body>
         <header>
                 <h1>Temple Album</h1>
-                <button id="menu-toggle">&#9776;</button> <!-- Hamburger Button -->
+                <button id="menu-toggle">&#9776;</button>
                 <nav>
                         <ul id="menu">
-                                <li><a href="home">Home</a></li>
-                                <li><a href="old ">Old</a></li>
-                                <li><a href="new ">New</a></li>
-                                <li><a href="large">Large</a></li>
-                                <li><a href="small">Small</a></li>
+                                <li><a href="#" id="home-btn">Home</a></li>
+                                <li><a href="#" id="old-btn">Old</a></li>
+                                <li><a href="#" id="new-btn">New</a></li>
+                                <li><a href="#" id="large-btn">Large</a></li>
+                                <li><a href="#" id="small-btn">Small</a></li>
                         </ul>
                 </nav>
         </header>
-
         <main>
                 <h2>Home</h2>
                 <div id="temple-container">
-                        <div class="temple-card">
-                                <script src="scripts/filtered-temples.js" defer></script>
-                        </div>
+                        <div class="temple-card"> </div>
                 </div>
 
         </main>
 
 
         <footer>
-                <p>© <span id="currentYear"></span> | OJO Israel | Lagos,Nigeria.</p>
-                <p class="lastmodified"> <span id="getdates.js">Last Modified</span></p>
-
-        </footer>
-        <script src="scripts/getdates.js" defer></script>
-</body>
-
-</html>
+                <p>&copy; <span id="footer-year"></span> | OJO Israel | Lagos, Nigeria.</p>
+                <p class="lastmodified">Last Modified: <span id="last-modified"></span></p>
+            </footer>
+            <script src="scripts/filtered-temples.js" defer></script>
+            <script src="scripts/getdates.js" defer></script>
+        </body>
+        </html>

@@ -1,7 +1,6 @@
 :root {
     --main-color: #3498db;
     --text-size: 16px;
-    
     --heading-font: 'Times Roman', serif;
     --paragraph-font: 'Arial', Sans-serif;
 }
@@ -78,29 +77,28 @@ main {
 h2 {
     font-size: 2rem;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     color: #212121;
 }
-   /* Temple Container */
-   
 
 /* Grid Layout for Images */
 .temple-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px; /* Slightly reduced gap for proximity */
     justify-content: center;
     align-items: center;
     padding: 20px;
+    gap: 16px; /* Slightly reduced gap for proximity */
+
 }
-
-
 .temple-card img {
     width: 100%;
     height: 180px; /* Adaptive height for better responsiveness */
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+
 
 }
 
@@ -114,6 +112,7 @@ h2 {
     padding: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 /* Hover Effects */
