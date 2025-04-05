@@ -1,6 +1,6 @@
 :root{
     --main-color: #007bff;
-    --secondary-color: #F5A623;; /* Darker gold for better contrast */
+    --secondary-color: #1f1cb4;; /* Darker gold for better contrast */
     --font-family: "roboto", sans-serif;
 }
 
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 .hero {
-    background-color: #F5A623;
+    background-color: #4e14aa;
     color: white;
     text-align: center;
     padding: 50px 20px;
