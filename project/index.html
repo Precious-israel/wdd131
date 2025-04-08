@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edsarah Logistics</title>
+    <meta name="description"
+        content="This is the home page of WDD 131 (dynamics of web fundamentals) and few details about my country, the cascading styling of the web pages and the use of JavaScript to determine the behaviour of the pages." />
+    <meta name="author" content="OJO Israel" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo03.webp" alt="Edsarah Logistics Logo" />
+        </div>
+
+        <button id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>EDSARAH LOGISTICS COMPANY</h1>
+            <img src="images/hero2.webp" alt="Hero Image" />
+            <div class="inner_div">
+                <article class="hero-information">
+                    <p>
+                        Edsarah Logistics Company is a reliable Logistics Solutions Worldwide
+                        as we treat your goods with a touch of royalty.
+                    </p>
+                    <p>
+                        Your trusted partner in shipping, warehousing, and distribution.
+                        Visit us at <a href="http://edsarahlogistics.ng" target="_blank">edsarahlogistics.ng</a>.
+                    </p>
+                </article>
+            </div>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="adventures-gallery">
+                <div class="service-item">
+                    <h3>Shipping</h3>
+                    <p>Fast and secure shipping solutions globally.</p>
+                    <figure>
+                        <img src="images/hero2.webp" alt="Bonded Terminal" />
+                        <figcaption>Bonded Terminal</figcaption>
+                    </figure>
+                </div>
+
+                <div class="service-item">
+                    <h3>Warehousing</h3>
+                    <p>State-of-the-art facilities for safe storage of your goods.</p>
+                    <figure>
+                        <img src="images/hero6.webp" alt="Warehouse" />
+                        <figcaption>Warehouse</figcaption>
+                    </figure>
+                </div>
+
+                <div class="service-item">
+                    <h3>Freighting</h3>
+                    <p>Reliable freighting services at affordable costs.</p>
+                    <figure>
+                        <img src="images/her07.webp" alt="Freighting" />
+                        <figcaption>Freighting</figcaption>
+                    </figure>
+                </div>
+
+                <div class="service-item">
+                    <h3>Distribution</h3>
+                    <p>Efficient distribution to meet your business needs.</p>
+                    <figure>
+                        <img src="images/hero1.webp" alt="Efficient Delivery" />
+                        <figcaption>Efficient Delivery</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" name="contactForm" autocomplete="on">
+                <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" />
+                <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email" />
+                <textarea id="message" name="message" placeholder="Your Message" required autocomplete="on"></textarea>
+                <button type="submit" id="submitButton" name="submitButton">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> | Edsarah Logistics | Lagos, Nigeria | All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+        </div>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/siteplan.js" defer></script>
+</body>
+
+</html>
