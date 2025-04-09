@@ -19,7 +19,7 @@
 
 body {
     font-family: var(--font-body);
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #333;
     line-height: 1.6;
     padding: 20px;
