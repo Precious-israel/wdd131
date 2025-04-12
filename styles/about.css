@@ -1,8 +1,8 @@
 :root {
     --primary-color: #dbd9e4;
     --secondary-color: hsl(0, 89%, 41%);
-    --accent1-color:  #1D4E89;
-    --accent2-color: #d5d8d5;
+    --accent1-color:   #1f1cb4;
+    --accent2-color: #c2cfc2;
 
     --heading-font: 'Halant', serif;
     --paragraph-font: 'Roboto', Sans-serif;
@@ -11,22 +11,23 @@
 
 header {
     display: flex;
-    align-items: center;
-    padding: 0.2rem;
-    background-color: var(--accent1-color);
-    
-    height: 150px;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    height: 150px;
+    color: white;
+    position: relative;
     
     
 }
 
-header img {
+/* header img {
     width: 100%;
     height: auto;
     display: flex;
     margin: 0.5%;
-}
+} */
 
 nav ul {
     list-style: none;
@@ -43,18 +44,19 @@ nav ul li a {
 }
 
 .logo img {
-    max-height: 100px;
+    max-height: 120px;
     width: auto;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 
 body {
     font-family: var(--paragraph-font);
-    background-color: #f3f8f8;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    align-items: center;
+    padding: 0.2rem;
+    background-color: var(--accent2-color);
+    height: 150px;
+    justify-content: space-between;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,7 +74,7 @@ footer {
     
     margin: 0 auto;
     width: 100%;
-    max-width: 80%;
+    
 }
 
 
