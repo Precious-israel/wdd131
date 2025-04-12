@@ -81,17 +81,17 @@ nav ul li a {
 
 .hero h1 {
     position: absolute;
-    top: 10%;
+    top: 1rem;
     left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.6);
-    /* color: var(--secondary-color); */
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 2555, 0.4);
+    color: var(--secondary-color);
     padding: 1rem;
-    font-size: 2em;
+    font-size: 3em;
     width: 90%;
-    /* text-align: center; */
-    /* border-radius: var(--border-radius); */
+    text-align: center;
 }
+
 
 .hero article {
     position: absolute;
@@ -103,6 +103,9 @@ nav ul li a {
     padding: 1rem;
     font-size: 1.25rem;
     border-radius: var(--border-radius);
+}
+.hero article a {
+    color: rgb(50, 211, 18);
 }
 
 /* CTA Button */
@@ -137,20 +140,65 @@ nav ul li a {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-
-.service-item {
-    background-color: var(--background-light);
-    padding: 1rem;
-    border-radius: var(--border-radius);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Ensure the content is placed side by side for each section */
+.content-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 20px;
 }
 
-/* .service-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-} */
+.content-row img {
+    max-width: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
 
+.content-row p {
+    flex: 1;
+    font-size: 22px;
+    text-align: justify;
+}
+/* Adjust text styling for headings */
+h2, h3, h4 {
+    font-family: 'Domine', serif;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 20px;
+}
+/* Make sure the images inside service cards are aligned and properly sized */
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Style for list items */
+ul li {
+    font-family: 'Roboto', sans-serif; /* Set font style */
+    font-size: 16px; /* Set font size */
+    line-height: 1.6; /* Set line height for readability */
+    margin-bottom: 10px; /* Space between list items */
+    padding-left: 20px; /* Add padding to the left for custom bullets or icons */
+    position: relative; /* Position relative for custom bullet styles */
+}
+/* For better mobile responsiveness, stack the content on smaller screens */
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-row img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
 /* Contact */
 .contact {
     background-color: var(--background-light);
@@ -217,7 +265,7 @@ nav ul li a {
 form input,
 form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     font-size: 16px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -253,10 +301,31 @@ form button:hover {
     color: var(--main-color);
 }
 
-/* .service-card p {
+.management {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.management figure {
+    flex: 1 1 250px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.management img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+ .service-card p {
     font-size: 1rem;
     color: var(--text-dark);
-} */
+} 
 
 footer .social-media a {
     color: var(--text-light);
@@ -366,3 +435,40 @@ footer a {
     }
 }
 
+contact-fields input, 
+.contact-fields select, 
+.contact-fields textarea {
+    width: 80%; /* Or set to a specific width if needed, like 80% */
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Ensures elements align properly from the left */
+    margin-left: 0; /* Removes any unintended left margin */
+    resize: vertical; /* allows resizing vertically only */
+}
+
+   
+.sign-up {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically center-aligns the checkbox and label */
+    margin-top: 10px; /* Adds some space above the checkbox */
+}
+
+.sign-up input[type="checkbox"] {
+    margin-right: 2px; /* Adds some space between the checkbox and label */
+}
+
+.contact-fields .submit {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-fields .submit:hover {
+    background-color: #555;
+}

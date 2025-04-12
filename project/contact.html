@@ -31,13 +31,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="container">
+        <div class="container"></div>
             <div class="main-content">
 
                 <!-- Contact Form -->
@@ -91,17 +91,27 @@
                 </div>
             </div>
 
-            <!-- Management Team (Will be populated via JavaScript) -->
-            <section class="member">
-                <h3>Meet Our Management Team</h3>
+            <!-- Management Team -->
+            <section class="management-section">
+                <h2>Meet Our Management Team</h2>
                 <div class="management">
-                    <!-- JavaScript will populate this -->
+                    <figure>
+                        <img src="images/funke.jpg" alt="CEO">
+                        <figcaption>Oluwafunke Israel - Chief Executive Officer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/israel.jpg" alt="COO">
+                        <figcaption>Oluwadamilola Caris - Chief Operating Officer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/preciuos.jpg" alt="GMD">
+                        <figcaption>Precious Treasure - Group Managing Director</figcaption>
+                    </figure>
                 </div>
             </section>
-        </div>
 
-        <!-- Response message after form submission -->
-        <div id="formResponse"></div>
+            <!-- Response message after form submission -->
+            <div id="formResponse"></div>
     </main>
 
     <footer>
@@ -113,10 +123,8 @@
     </footer>
 
     <!-- External JS -->
-    <scrip src="scripts/siteplan.js" defer></script>
-
+    <script src="scripts/siteplan.js" defer></script>
 
 </body>
 
 </html>
-

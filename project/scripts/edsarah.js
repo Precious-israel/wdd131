@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   // Navigation Menu Toggle
   const menuToggle = document.getElementById("menuToggle");
@@ -30,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       section: 'history',
       history: "Founded in 2010, Edsarah Logistics has grown from a local courier to an international logistics provider. We’re passionate about delivering packages — and peace of mind — to our customers worldwide.",
-      image: "images/her07.webp",
+      image: "images/hero4.webp",
       values: [
         "Integrity in every delivery",
         "Customer-first approach",
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { src: "images/hero1.webp", caption: "Efficient Delivery" },
         { src: "images/hero4.webp", caption: "Sea Haulage" },
         { src: "images/hero6.webp", caption: "Warehouse" },
-        { src: "images/her07.webp", caption: "Freighting" }
+        { src: "images/hero7.webp", caption: "Freighting" }
       ]
     }
   ];
@@ -119,36 +118,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Management Team Section
-  const managementTeam = [
-    {
-      name: "Oluwafunke Israel",
-      title: "Chief Executive Officer",
-      image: "images/funke.jpg"
-    },
-    {
-      name: "Oluwadamilola Caris",
-      title: "Chief Operating Officer",
-      image: "images/israel.jpg"
-    },
-    {
-      name: "Precious Treasure",
-      title: "Group Managing Director",
-      image: "images/preciuos.jpg"
-    }
-  ];
-
-  const teamSection = document.querySelector('.management');
-  managementTeam.forEach(member => {
-    const figure = document.createElement('figure');
-    const img = document.createElement('img');
-    img.src = member.image;
-    img.alt = member.title;
-    const caption = document.createElement('figcaption');
-    caption.textContent = `${member.name} - ${member.title}`;
-    figure.appendChild(img);
-    figure.appendChild(caption);
-    teamSection.appendChild(figure);
-  });
+  
 });
-
