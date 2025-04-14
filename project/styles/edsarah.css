@@ -12,13 +12,6 @@
     --border-radius: 8px;
 }
 
-/* Reset (optional)
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-*/
 
 body {
     font-family: var(--font-family);
@@ -168,14 +161,14 @@ nav ul li a {
 
 .content-row p {
     flex: 1;
-    font-size: 22px;
+    font-size: 25px;
     text-align: justify;
 }
 
 h2, h3, h4 {
     font-family: 'Domine', serif;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -183,19 +176,33 @@ h3 {
     margin-top: 20px;
 }
 
-.service-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.service-card {
+    overflow: hidden; /* ensures the container adapts to floated content */
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    padding: 50rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-ul li {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+.service-card img {
+    float: left; /* float image to the left */
+    width: 200px;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.service-card h4 {
+    margin-top: 0;
+}
+
+.service-card p {
+    font-size: 25px;
     line-height: 1.6;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
+    color: #333;
+    text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -258,43 +265,56 @@ ul li {
 }
 
 /* Contact */
-.contact {
-    background-color: var(--background-light);
-    padding: 3rem 2rem;
-    text-align: center;
+.contact-company-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
 }
 
-.contact form {
+.contact-form,
+.company-info {
+    flex: 1 1 45%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.contact-form form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    margin: auto;
 }
 
-.contact input,
-.contact textarea {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: var(--border-radius);
+.contact-form input,
+.contact-form textarea,
+.contact-form label {
+    margin-bottom: 1rem;
+    width: 100;
 }
 
-form {
-    max-width: 85%;
-    margin: 20px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+fieldset.contact-fields {
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
 }
 
-fieldset {
-    border: 2px solid #4b1da1;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
+/* Make sure map inside company info is responsive */
+.company-info .map iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+/* Responsive stacking for smaller screens */
+@media (max-width: 768px) {
+    .contact-company-wrapper {
+        flex-direction: column;
+    }
 }
 
 legend {
@@ -302,16 +322,16 @@ legend {
     font-weight: bold;
     color: #4b1da1;
     padding: 0 10px;
-}
+} 
 
-label {
+ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     font-size: 1.2rem;
-}
+} 
 
-select, textarea, input[type="text"], input[type="email"] {
+select, textarea, input[type="text"], input[type="email"], section {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
@@ -322,7 +342,7 @@ select, textarea, input[type="text"], input[type="email"] {
 
 input[type="radio"] {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 1px;
 }
 
 form button:hover {
@@ -394,7 +414,7 @@ footer .social-media a:hover {
 }
 
 /* Contact Section Layout */
-.main-content {
+/*.main-content {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -432,3 +452,4 @@ footer .social-media a:hover {
     margin-left: 0;
     resize: vertical;
 }
+*/
